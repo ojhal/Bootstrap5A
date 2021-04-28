@@ -118,16 +118,14 @@
             <img src="Images/a1.jpg" class="img-fluid about-img" alt="Images/a1.jpg">
           </figure>
         </div>
-        <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+        <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
           <h1> Programmer Life</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus
-            PageMaker including versions of Lorem Ipsum.</p>
-          <button type="button" class="btn btn-outline-info">Check More</button>
+            electronic typesetting, remaining essentially unchanged.</p>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="Please Check here">Check More</button>
 
         </div>
       </div>
@@ -139,6 +137,12 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
   </script>
 
 </body>
