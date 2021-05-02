@@ -59,6 +59,97 @@
       </div>
     </div>
   </nav>
+  <section class="main-heading my-5">
+
+    <div class="text-center">
+      <h1 class="display-4"> about us </h1>
+      <hr class="w-25 mx-auto" />
+    </div>
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
+          <figure>
+            <img src="Images/a1.jpg" class="img-fluid about-img" alt="Images/a1.jpg">
+          </figure>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 col-xxl-6 d-flex justify-content-center align-items-start flex-column">
+          <h1> Programmer Life</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged.</p>
+          <button type="button" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="right"
+            title="Please Check here">Check More</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div id="navbar-example" style="position:relative;">
+
+
+          <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" href="#fat">@fat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mdo">@mdo</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                  aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#one">one</a></li>
+                  <li><a class="dropdown-item" href="#two">two</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#three">three</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0"
+            style="height: 300px; overflow-y:scroll;">
+            <h4 id="fat">@fat</h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem
+              Ipsum passage, and going through the cites of the word</p>
+            <h4 id="mdo">@mdo</h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem
+              Ipsum passage, and going through the cites of the word</p>
+            <h4 id="one">one</h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem
+              Ipsum passage, and going through the cites of the word</p>
+            <h4 id="two">two</h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem
+              Ipsum passage, and going through the cites of the word</p>
+            <h4 id="three">three</h4>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem
+              Ipsum passage, and going through the cites of the word</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
   <footer class="bg-secondary text-center text-white">
     <p>Made by @ojhal </p>
   </footer>
@@ -74,6 +165,9 @@
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar-example'
     })
   </script>
 

@@ -59,6 +59,103 @@
       </div>
     </div>
   </nav>
+  <section class="main-heading my-5">
+    <div class="text-center">
+      <h1 class="display-4"> Gallary </h1>
+      <hr class="w-25 mx-auto" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="toast" data-animation="true" data-autohide="false" role="alert" aria-live="assertive"
+          aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Notification</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello,This is notification for you.
+          </div>
+        </div>
+        <div class="toast" data-animation="true" data-autohide="false" role="alert" aria-live="assertive"
+          aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Notification</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello,This is notification for you.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row gy-2 my-5">
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+        <div class="col-md-4 col-10 col-xxl-4 mx-auto">
+          <figure>
+            <img src="Images/s1.jpg" alt="Gallary" class="img-fluid">
+          </figure>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
   <footer class="bg-secondary text-center text-white">
     <p>Made by @ojhal </p>
   </footer>
@@ -71,10 +168,12 @@
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
   </script>
   <script type="text/javascript">
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function (toastEl) {
+      return new bootstrap.Toast(toastEl)
     })
+    toastList[0].show();
+    toastList[1].show();
   </script>
 
 </body>
