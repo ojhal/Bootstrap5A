@@ -331,14 +331,27 @@
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3">
-              <label for="exampleDataList" class="form-label">Datalist example</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleDataList" class="form-label"> Select City</label>
               <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
               <datalist id="datalistOptions">
                 <option value="San Francisco">
-                <option value="New York">
-                <option value="Seattle">
-                <option value="Los Angeles">
-                <option value="Chicago">
+                <option value="New York"></option>
+                <option value="Seattle"></option>
+                <option value="Los Angeles"></option>
+                <option value="Chicago"></option>
               </datalist>
             </div>
             <div class="mb-3">
